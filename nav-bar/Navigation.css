@@ -1,0 +1,165 @@
+/* Navigation.css */
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #0468BF ;
+  padding: 10px;
+  z-index: 3;
+  overflow:visible;
+  position: sticky;
+  top: 80px;
+
+}
+
+.nav-bar .bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+ 
+}
+
+.nav-bar .bar li {
+  margin-right: 20px;
+  font-size: large;
+  font-weight: 200;
+  font-family:'Courier New', Courier, monospace;
+  
+}
+
+.nav-bar .bar li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.nav-bar .bar li a.active {
+  font-weight: bold;
+ 
+}
+
+.has-dropdown{
+  
+  display: inline-block;
+  margin: -2px 8px;
+  
+}
+
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color:  #0468BF;
+  min-width: 160px;
+  z-index: 1;
+  
+}
+.dropdown li img {
+  width: 60px;
+  height: 40px;
+  margin: 0;
+
+}
+
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+  
+
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 2;
+    color: whitesmoke;
+  }
+
+  .sidebar {
+    display: flex;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #0468BF;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    border-bottom-right-radius: 20px;
+    border: 2px solid rgb(127, 119, 119);
+    
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar .close-icon {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .sidebar .close-icon:hover{
+    color:blue;
+
+  }
+
+  .sidebar .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    color: whitesmoke;
+    list-style: none;
+  }
+
+  .sidebar .bar li {
+    width: 100%;
+  }
+
+  .sidebar .bar li a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+  
+  }
+  
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .nav-bar {
+    display: flex;
+  }
+
+  .menu-icon, .sidebar {
+    display: none;
+  }
+}

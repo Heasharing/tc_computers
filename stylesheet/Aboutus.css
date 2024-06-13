@@ -1,0 +1,85 @@
+.aboutus-title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    font-size: 60px;
+    
+}
+h1:hover{
+    color: blueviolet;
+}
+
+.aboutus-body{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    font-style: italic;
+    
+}
+
+.profile-container{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+
+}
+.profile-avatar{
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    margin: 16px 100px;
+    
+
+}
+
+.profile-avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    
+    
+   
+}
+.profile-avatar h3{
+    margin: 0;
+    
+}
+
+.search-items{
+    display: none;
+}
+@media (max-width: 768px){
+    .aboutus-body{
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        font-size: 24px;
+        font-style: italic 
+    }
+    .profile-avatar{
+        width: 100px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 20px 8px 32px;
+    }
+    
+    .profile-avatar img{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        border-radius: 50%;
+        
+    }
+    .profile-avatar h3{
+        margin: 0;
+        font-size: small;
+        
+    }
+
+}

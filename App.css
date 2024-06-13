@@ -1,0 +1,316 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh;
+  position: absolute;
+
+}
+
+.header-bar {
+  background-color:  #0468BF;
+  padding: 10px;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 998;
+  position: sticky;
+}
+
+.header-bar h1{
+  font-size: 24px;
+  color:whitesmoke;
+  
+}
+
+.not-found-msg{
+  justify-content: center;
+  color: #0468BF;
+  align-items: center;
+  text-align: center;
+  display: block;
+  
+}
+
+.language-switcher button {
+  margin-left: 5px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 10px; /* Adjust according to your header and slider height */
+}
+
+
+.bottom-sheet {
+  width: 100%;
+  background-color:#0468BF;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+table{
+  width: 100%;
+  text-align: center;
+}
+
+table .bm-list{
+  text-align: left;
+  margin: 0;
+  padding-left: 200px;
+}
+
+.bottom-container img{
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+}
+
+.bm-list{
+  list-style: none;
+}
+
+.bm-list li a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+
+.logo-container{
+  width: 100%;
+  margin: 8px 32px 10px;
+  padding: 0px;
+  
+
+}
+
+th h1{
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+th h1:hover{
+  color: whitesmoke;
+}
+
+.logo-container img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 8px;
+}
+
+.sub-form {
+  width: 100%;
+  height: auto;
+}
+
+input{
+  border: 1px solid #0468BF;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  justify-content: right;
+  font-size: 18px;
+}
+
+.sub-btn{
+  display: inline-block;
+  color:whitesmoke;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  outline: none;
+  background-color: red;
+  height: 50px;
+  width: 150px;
+  margin: 4px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px whitesmoke;
+}
+.sub-bnt:hover{
+  background-color: #ff0000
+}
+
+.sub-btn:active{
+  background-color: #ff0000;
+  box-shadow: 0 5px whitesmoke;
+  transform: translateY(4px);
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+ 
+  .menu-icon{
+    margin-top: 4%;
+    z-index: 999;
+    position: fixed;
+  
+  }
+
+  .slider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+  }
+
+  .slider img{
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+    z-index: 8;
+
+  }
+  .navigation-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 10px; /* Adjust according to your header and slider height */
+    z-index: 3;
+
+  }
+  .bottom-sheet {
+    padding: 4px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    justify-content: center;
+  }
+  table{
+    width: 100%;
+    text-align: left;
+  }
+
+
+  table .bm-list{
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
+    margin-top: auto;
+  }
+  
+  .bottom-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+  }
+  
+  .bm-list{
+    list-style: none;
+  }
+  
+  .bm-list li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .copy-right{
+    width: 100%;
+    text-align: center;
+    
+    
+  }
+  
+  th h1{
+    font-size: 14px;
+  
+  }
+  
+  th h1:hover{
+    color: whitesmoke;
+  }
+  .logo-container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  .logo-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0;
+    justify-content: left;
+  }
+ 
+  .sub-form {
+    width: 100%;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  input{
+    border-radius: 4px;
+    height: 25px;
+    width: 100px;
+    justify-content: right;
+    font-size: 12px;
+  }
+  
+  .sub-btn{
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+    height: 20px;
+    width: 80px;
+    margin: 4px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 3px whitesmoke;
+  }
+  .logo-tc{
+    display: none;
+  }
+  
+  
+  
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .nav-bar {
+    display: flex;
+  }
+
+  .menu-icon, .sidebar {
+    display: none;
+  }
+}

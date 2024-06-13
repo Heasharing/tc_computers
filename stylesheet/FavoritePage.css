@@ -1,0 +1,55 @@
+/* FavoriteListPage.css */
+
+.favorite-list {
+    padding: 20px;
+  }
+  
+  .favorite-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .favorite-list .laptop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .favorite-list .laptop-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorite-list .laptop-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .favorite-list .laptop-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .favorite-list .laptop-card p {
+    margin: 5px 0;
+  }
+  
+  .favorite-list .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+  
+  .favorite-list .remove-button:hover {
+    background-color: #ff1a1a;
+  }
+  

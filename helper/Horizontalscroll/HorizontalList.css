@@ -1,0 +1,20 @@
+/* HorizontalList.css */
+.horizontal-list-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of child elements */
+    padding: 10px; /* Optional padding for better appearance */
+  }
+  
+  .horizontal-list {
+    display: inline-flex; /* Makes the children display in a row */
+  }
+  
+  .horizontal-list-item {
+    min-width: 150px; /* Set a minimum width for each item */
+    margin-right: 10px; /* Optional spacing between items */
+    background-color: #f8f9fa; /* Background color for visibility */
+    border: 1px solid #ddd; /* Optional border for better appearance */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+  }
+  

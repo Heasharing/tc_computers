@@ -1,0 +1,21 @@
+/* Home.css */
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.laptop-page {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal; /* Reset white-space */
+  margin-right: 10px; /* Adjust margin between LaptopPage and MonitorPage */
+}
+
+@media (max-width:768px){
+
+}

@@ -1,0 +1,41 @@
+.slider {
+    position: sticky;
+    width: 100%;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: none;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .slider img.active {
+    display: block;
+  }
+  
+  .navigation-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+
+
+
+  
